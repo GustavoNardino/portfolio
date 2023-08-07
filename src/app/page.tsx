@@ -1,16 +1,12 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+import PagesLayout from '@/components/PagesLayout/PagesLayout'
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      
-
-      <div className={styles.center}>
-        <h1>Gustavo Nardino</h1>
-      </div>
-
-      
-    </main>
+    <PagesLayout title='Apresentação'>
+      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam est modi repellat recusandae saepe laboriosam sapiente dolorum ea? Eligendi quia in inventore molestiae animi modi tempora sapiente eaque minima.</p>
+    </PagesLayout>
   )
 }
+
+export default Home

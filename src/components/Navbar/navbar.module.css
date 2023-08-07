@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    padding: 1.5rem;
+}
+
+.menulink {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #8c52ff;
+}
+.menulink:hover {
+    text-decoration: dashed;
+    color: antiquewhite;
+}

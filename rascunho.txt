@@ -1,0 +1,27 @@
+Recursos Next13
+
+Chamadas SSR nos componentes \o/
+Fetch agora é server side first parâmetros {cache} para ssr / {next} para ssg e revalidate
+Promise.all para várias req simultâneas no mesmo componente
+
+nome do diretório com parênteses não aparece na url:
+App
+    dashboard
+        (texto que eu não quero ver na url)
+            [id]
+www.site.com/dashboard/123
+
+No diretório App ficam as páginas, a pasta com o nome da rota e o antigo index.tsx agora é page.tsx
+
+Páginas especiais em App/
+Loaging.tsx faz o effeito load com spinner ou opções melhores (muitas) para UX 
+
+!!!!! Suspense e fallback para fazer loading de componentes !!!!!
+
+import {useRouter} from 'next/navigation' tem o router.refresh() pra atualizar a page
+
+'use client' em componentes que precisarem de js para interação, estados ou bibliotecas que peçam interação
+*componetnes com 'use client' não podem ser async nem fazer ssr/ssg, a requisição precisa ser a antiga (useEffect...)
+*então é preferível não usar isso na página toda, mas sim apenas no componente que precisar, assim acontece o hydrate
+
+!!!!! combinar o ssr de dentro dos componentes, o suspense e o 'use client' !!!!!!
