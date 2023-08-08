@@ -7,3 +7,9 @@ Selecionar conteúdo a ser exibido
 Pesquisar APIs públicas interessantes
 
 Assets no canva
+
+Ajustar diagramação da apresentação e experiências
+
+melhorar a paleta de cores
+
+adicionar descrições e links nas experiências
