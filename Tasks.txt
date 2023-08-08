@@ -13,3 +13,5 @@ Ajustar diagramação da apresentação e experiências
 melhorar a paleta de cores
 
 adicionar descrições e links nas experiências
+
+responsividade (navbar dropdown)

@@ -1,15 +1,70 @@
 .container {
+    position: relative;
     display: flex;
-    padding: 1.5rem;
-    box-shadow: 0px 15px 10px -15px #8c52ff; 
+    align-items: center;
+    justify-content: center;
+    /* padding: 1.5rem; */
+    height: 70px;
+    box-shadow: 0px 15px 10px -15px #8c52ff;
 }
 
 .menulink {
-    margin-left: 2rem;
+    padding: 1.5rem;
+    
     text-decoration: none;
     color: #8c52ff;
 }
+
 .menulink:hover {
     text-decoration: dashed;
     color: antiquewhite;
+}
+
+.mobileMenuButton {
+    display: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid #8c52ff;
+    color: #8c52ff;
+}
+
+.mobileMenuButton:hover {
+    color: antiquewhite;
+    border: 1px solid #8c52ff;
+}
+
+.menuDropdown {
+    position: absolute;
+    z-index: 8000 !important;
+    background-color: #111;
+    background-image: linear-gradient(to bottom right, #111, #19053f);
+    /* border-radius: 0 0 4px 4px; */
+    border-top: 1px solid #8c52ff;
+    border-bottom: 1px solid #8c52ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 150px; */
+    top: 100%;
+    right: 0;
+    width: 100vw;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        justify-content: end;
+        padding: .5rem;
+    }
+
+    .mobileMenuButton {
+        display: block;
+    }
+
+    .menuLinks {
+        display: none;
+    }
 }
