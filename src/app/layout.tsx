@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar/Navbar'
 import './globals.css'
 import Footer from '@/components/Footer/Footer'
+import GA from './GA'
+
 
 export const metadata: Metadata = {
   title: 'Portfólio Gustavo Nardino',
@@ -10,12 +12,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html className='bg-gradient-to-br from-slate-950 to-indigo-950' lang="pt-BR">
+      <GA />
       <body>
-        <div>
+        <main>
           <Navbar />
           {children}
-        </div>
+        </main>
         <Footer />
       </body>
     </html>

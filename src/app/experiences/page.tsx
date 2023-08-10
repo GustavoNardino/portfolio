@@ -1,33 +1,41 @@
-import styles from './page.module.css'
+import Subtitle from '@/components/Subtitle/Subtitle'
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
+import Text from '@/components/Text/Text'
+import Infobox from '@/components/Infobox/Infobox'
 
 const Experiences = () => {
     return (
-        <PagesLayout title='Experiências'>
-            <h4 className={styles.title}>Linguagens</h4>
-            <p className={styles.text}>Javascript / Typescript</p>
-            <p className={styles.text}>Python</p>
-
-            <h4 className={styles.title}>Frameworks e Bibliotecas</h4>
-            <p className={styles.text}>Next JS</p>
-            <p className={styles.text}>React JS</p>
-            <p className={styles.text}>Redux Toolkit</p>
-
-            <h4 className={styles.title}>Fluxo de dados e performance</h4>
-            <p className={styles.text}>Rest API</p>
-            <p className={styles.text}>SEO</p>
-            <p className={styles.text}>Server Side e Static rendering</p>
-
-            <h4 className={styles.title}>Estilos</h4>
-            <p className={styles.text}>CSS</p>
-            <p className={styles.text}>Bootstrap</p>
-            <p className={styles.text}>Styled Components</p>
-
-            <h4 className={styles.title}>DevOps</h4>
-            <p className={styles.text}>Linux / Bash</p>
-            <p className={styles.text}>AWS EC2 Instances</p>
-            <p className={styles.text}>Docker</p>
-
+        <PagesLayout className='lg:grid lg:grid-cols-2' title='Experiências'>
+            <Infobox className='lg:justify-self-end'>
+                <Subtitle>Linguagens</Subtitle>
+                <Text>Javascript / Typescript</Text>
+                <Text>Python</Text>
+            </Infobox>
+            <Infobox className=''>
+                <Subtitle>Frameworks e Bibliotecas</Subtitle>
+                <Text>Next JS</Text>
+                <Text>React JS</Text>
+                <Text>Redux Toolkit</Text>
+            </Infobox>
+            <Infobox className='lg:justify-self-end'>
+                <Subtitle>Fluxo de dados e performance</Subtitle>
+                <Text>Rest API</Text>
+                <Text>SEO</Text>
+                <Text>Server Side e Static rendering</Text>
+            </Infobox>
+            <Infobox className=''>
+                <Subtitle>Estilos</Subtitle>
+                <Text>CSS</Text>
+                <Text>Bootstrap</Text>
+                <Text>Tailwind</Text>
+                <Text>Styled Components</Text>
+            </Infobox>
+            <Infobox className='lg:justify-self-end'>
+                <Subtitle>DevOps</Subtitle>
+                <Text>Linux / Bash</Text>
+                <Text>AWS EC2 Instances</Text>
+                <Text>Docker</Text>
+            </Infobox>
         </PagesLayout>
     )
 }

@@ -1,16 +1,17 @@
-import styles from './pageslayout.module.css'
-
 type Props = {
-    children: any
-    title: string
+  children: any
+  title: string
+  className?: string
 }
 
-const PagesLayout = ({children, title}: Props) => {
+const PagesLayout = ({ children, title, className }: Props) => {
   return (
-    <div className={styles.container}>
-        <h1 className={styles.title}>{title}</h1>
+    <section className='p-6 md:px-24 md:py-12'>
+      <h1 className='mb-8 text-indigo-200 text-3xl'>{title}</h1>
+      <div className={className}>
         {children}
-    </div>
+      </div>
+    </section>
   )
 }
 

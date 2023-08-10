@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
-  transition: 0.3s;
+  transition: 0.4s;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -10,9 +14,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-html {
-  background-color: #111;
-  background-image: linear-gradient(to bottom right, #111, #19053f);
 }

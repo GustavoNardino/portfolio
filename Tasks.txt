@@ -1,17 +1,32 @@
+=== DONE ===
+
+responsividade (navbar dropdown)
+
 Pesquisar layouts para landing page
+
+
+=== DOING ===
 
 pegar logos das tecnologias utilizadas
 
 Selecionar conteúdo a ser exibido
 
-Pesquisar APIs públicas interessantes
-
-Assets no canva
+melhorar a paleta de cores
 
 Ajustar diagramação da apresentação e experiências
 
-melhorar a paleta de cores
+tailwind
+
+dark/light themes
+
+offcanvas
+
+=== TO DO ===
+
+SEO
+
+Pesquisar APIs públicas interessantes
 
 adicionar descrições e links nas experiências
 
-responsividade (navbar dropdown)
+grid e cards no labs
