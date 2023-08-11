@@ -30,3 +30,5 @@ Pesquisar APIs públicas interessantes
 adicionar descrições e links nas experiências
 
 grid e cards no labs
+
+efeito de lâmpada acendendo com hover + shadow + transition + react icon

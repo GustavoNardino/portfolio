@@ -6,7 +6,7 @@ interface SubtitlesProps {
 
 const Subtitle = ({ children }: SubtitlesProps) => {
     return (
-        <h2 className='text-indigo-100 text-xl mb-4 underline'>
+        <h2 className='text-customSubtitle text-xl mb-4 underline'>
             {children}
         </h2>
     )

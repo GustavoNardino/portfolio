@@ -14,12 +14,10 @@ const Infobox = ({ children, className }: Props) => {
             m-4 
             p-2 
             rounded-md 
-            bg-gradient-to-br 
-            from-slate-950 
-            to-indigo-950 
+            bg-customInfoboxBackground
             border 
-            border-b-indigo-900
-            border-r-indigo-900
+            border-b-customLink
+            border-r-customLink
             border-t-0
             border-l-0
             hover:-rotate-2
