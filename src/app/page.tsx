@@ -14,17 +14,16 @@ export const metadata: Metadata = {
   },
 }
 
-
 const Home = () => {
   return (
     <PagesLayout title='Apresentação'>
       <InfoSection>
         <div className='m-3 md:px-12 md:w-1/2 flex items-center justify-center md:justify-end'>
           <Image
-            className='mx-3 my-6 rounded-full shadow-md hover:shadow-indigo-100 hover:-rotate-2'
+            className='mx-3 my-6 rounded-full w-72 h-72 shadow-md shadow-customText'
             src="/profile.png"
-            width={300}
-            height={300}
+            width={288}
+            height={288}
             alt="Profile image" />
         </div>
         <div className='m-3 md:px-12 md:w-1/2 flex flex-col items-center md:items-start justify-center'>
@@ -39,20 +38,20 @@ const Home = () => {
         </div>
         <div className='m-3 md:px-12 md:w-1/2 flex items-center justify-center md:justify-start'>
           <Image
-            className='mx-3 my-6 rounded-full shadow-md hover:shadow-indigo-100 hover:-rotate-2'
+            className='mx-3 my-6 rounded-full w-72 h-72 shadow-md shadow-customText'
             src="/frontimg1.png"
-            width={300}
-            height={300}
+            width={288}
+            height={288}
             alt="Profile image" />
         </div>
       </InfoSection>
       <InfoSection>
         <div className='m-3 md:px-12 md:w-1/2 flex items-center justify-center md:justify-end'>
           <Image
-            className='mx-3 my-6 rounded-full shadow-md hover:shadow-indigo-100 hover:-rotate-2'
+            className='mx-3 my-6 rounded-full w-72 h-72 shadow-md shadow-customText'
             src="/frontimg2.png"
-            width={300}
-            height={300}
+            width={288}
+            height={288}
             alt="Profile image" />
         </div>
         <div className='m-3 md:px-12 md:w-1/2 flex flex-col items-center md:items-start justify-center'>

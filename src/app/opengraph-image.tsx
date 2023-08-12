@@ -23,9 +23,9 @@ export default async function Image() {
     (
       <div
         style={{
-          fontSize: 128,
+          fontSize: 45,
           fontFamily: 'monospace',
-          background: 'white',
+          background: 'wheat',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -33,7 +33,7 @@ export default async function Image() {
           justifyContent: 'center',
         }}
       >
-        Página inicial | Gustavo Nardino
+        Portfólio | Gustavo Nardino
       </div>
     )
   )

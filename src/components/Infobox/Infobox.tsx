@@ -15,12 +15,8 @@ const Infobox = ({ children, className }: Props) => {
             p-2 
             rounded-md 
             bg-customInfoboxBackground
-            border 
-            border-b-customLink
-            border-r-customLink
-            border-t-0
-            border-l-0
-            hover:-rotate-2
+            shadow-md
+            shadow-customText
             `}>
             {children}
         </div>

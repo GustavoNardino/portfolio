@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Subtitle from '../Subtitle/Subtitle'
-import Image from 'next/image'
 import Text from '../Text/Text'
+import { FaAws } from 'react-icons/fa'
+import { SiNginx, SiTailwindcss, SiNextdotjs } from 'react-icons/si'
 
 type Props = {}
 
@@ -26,14 +27,38 @@ const Footer = (props: Props) => {
           </Link>
           <span className='mb-2 text-customLink hover:text-customLink hover:underline'>E-mail: fgustavo.n@gmail.com</span>
         </div>
-        <div className='w-full md:w-1/2 flex items-end justify-end mb-6 md:mb-0'>
-          <Text>Desenvolvido com NextJS, Tailwind, Nginx e AWS</Text>
-          <Image
-            className='rounded shadow-md hover:shadow-indigo-100 ml-4'
-            src="/gN.png"
-            width={50}
-            height={50}
-            alt="Logo" />
+        <div className='w-full md:w-1/2 flex md:items-end md:justify-end mb-6 md:mb-0'>
+          <div className='flex items-center md:justify-end w-full'>
+            <Text>Desenvolvido com: </Text>
+            <Link
+              target="_blank"
+              href="https://nextjs.org/docs">
+              <SiNextdotjs
+                size='32'
+                className='text-customText hover:opacity-50 mx-1 cursor-pointer' />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://tailwindcss.com/docs/installation">
+              <SiTailwindcss
+                size='32'
+                className='text-customText hover:opacity-50 mx-1 cursor-pointer' />
+            </Link>
+            <Link
+              target="_blank"
+              href="http://nginx.org/en/docs/">
+              <SiNginx
+                size='32'
+                className='text-customText hover:opacity-50 mx-1 cursor-pointer' />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://aws.amazon.com">
+              <FaAws
+                size='36'
+                className='text-customText hover:opacity-50 mx-1 cursor-pointer' />
+            </Link>
+          </div>
         </div>
       </footer>
     </>
