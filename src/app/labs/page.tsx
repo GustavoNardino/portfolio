@@ -1,10 +1,17 @@
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
 import React from 'react'
 import Text from '@/components/Text/Text'
+import { Metadata } from 'next'
 
-type Props = {}
+export const metadata: Metadata = {
+    title: 'Laboratório',
+    description: 'Meus projetos pessoais de estudo',
+    alternates: {
+        canonical: `/labs`,
+    },
+}
 
-const Labs = (props: Props) => {
+const Labs = () => {
     return (
         <PagesLayout title='Laboratório'>
             <Text>grid de cards que leval pra outra page, cada card corresponde a um tema que eu estou estudando</Text>

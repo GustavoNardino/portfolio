@@ -4,9 +4,18 @@ import './globals.css'
 import Footer from '@/components/Footer/Footer'
 
 export const metadata: Metadata = {
-  title: 'Portfólio Gustavo Nardino',
-  description: 'Site hospedado na AWS para portfólio e estudos de diversas ferramentas',
+  metadataBase: new URL("https://www.gustavonardino.com.br"),
+  title: {
+    default: "Gustavo Nardino",
+    template: `%s | Gustavo Nardino`,
+  },
+  description: 'Portfólio e estudos de diversas ferramentas',
+  verification:{
+    google: "google-site-verification=G-BR2VWDZZDW"
+  },
+  category: 'tecnologia',
 }
+
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
 
   return (

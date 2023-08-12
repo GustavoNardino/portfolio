@@ -4,6 +4,9 @@ responsividade (navbar dropdown)
 
 Pesquisar layouts para landing page
 
+tailwind
+
+dark/light themes efeito de lâmpada acendendo com hover + shadow + transition + react icon
 
 === DOING ===
 
@@ -13,17 +16,22 @@ Selecionar conteúdo a ser exibido
 
 melhorar a paleta de cores
 
-Ajustar diagramação da apresentação e experiências
-
-tailwind
-
-dark/light themes
+melhorar diagramação da apresentação e experiências
 
 offcanvas
 
 === TO DO ===
 
 SEO
+    favicon
+    open graph (modelo abaixo)
+    robots (modelo abaixo)
+    title (dinâmicos com template)
+    description
+    alternates:canonical:url
+    
+
+google analytics
 
 Pesquisar APIs públicas interessantes
 
@@ -31,4 +39,49 @@ adicionar descrições e links nas experiências
 
 grid e cards no labs
 
-efeito de lâmpada acendendo com hover + shadow + transition + react icon
+fazer uma imagem para o open graph
+
+
+
+
+export const metadata = {
+  openGraph: {
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    url: 'https://nextjs.org',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://nextjs.org/og-alt.png',
+        width: 1800,
+        height: 1600,
+        alt: 'My custom alt',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+}
+
+
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}

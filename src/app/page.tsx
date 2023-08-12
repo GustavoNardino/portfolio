@@ -3,6 +3,17 @@ import PagesLayout from '@/components/PagesLayout/PagesLayout'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import Text from '@/components/Text/Text'
 import InfoSection from '@/components/InfoSection/InfoSection'
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: 'Apresentação | Gustavo Nardino',
+  description: 'Um pouco da minha história e carreira na programação.',
+  alternates: {
+    canonical: `/`,
+  },
+}
+
 
 const Home = () => {
   return (

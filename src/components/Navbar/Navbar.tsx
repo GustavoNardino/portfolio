@@ -3,14 +3,13 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import ThemeButton from '../ThemeButton/ThemeButton'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 type Props = {}
 
 const Navbar = (props: Props) => {
     const [mobileMenu, setMobileMenu] = useState(false)
-    
-    
+
     return (
         <header className='
             justify-between
@@ -39,7 +38,8 @@ const Navbar = (props: Props) => {
                 hover:border-indigo-100 
                 text-indigo-400 
                 hover:text-indigo-100'
-                onClick={() => mobileMenu ? setMobileMenu(false) : setMobileMenu(true)}>
+                // onClick={() => mobileMenu ? setMobileMenu(false) : setMobileMenu(true)}>
+                onClick={() => setMobileMenu(state => !state)}>
                 <GiHamburgerMenu />
             </section>
             {mobileMenu &&
