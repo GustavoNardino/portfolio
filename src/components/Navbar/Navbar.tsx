@@ -34,11 +34,10 @@ const Navbar = (props: Props) => {
                 items-center 
                 justify-center 
                 border 
-                border-indigo-400 
-                hover:border-indigo-100 
-                text-indigo-400 
-                hover:text-indigo-100'
-                // onClick={() => mobileMenu ? setMobileMenu(false) : setMobileMenu(true)}>
+                border-customLink 
+                text-customLink
+                hover:border-customLink/50 
+                hover:text-customLink/50'
                 onClick={() => setMobileMenu(state => !state)}>
                 <GiHamburgerMenu />
             </section>
