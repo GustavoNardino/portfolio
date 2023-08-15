@@ -1,12 +1,21 @@
+'use client'
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 type Props = {
     children: any
-    className?:string
+    className?: string
+    id:number
 }
-const Infobox = ({ children, className }: Props) => {
+const Infobox = ({ children, className, id }: Props) => {
+    const router = useRouter()
+    
+    function handleOpenLab() {
+        router.push(`/labs/${id}`)
+    }
     return (
-        <div className={`
+        <div onClick={handleOpenLab}
+            className={`
             ${className}
             h-48
             overflow-y-auto

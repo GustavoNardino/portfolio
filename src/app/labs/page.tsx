@@ -1,9 +1,10 @@
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
-import React from 'react'
+import React, { Suspense } from 'react'
 import Text from '@/components/Text/Text'
 import { Metadata } from 'next'
 import Infobox from '@/components/Infobox/Infobox'
 import Subtitle from '@/components/Subtitle/Subtitle'
+import { getLabListData } from '@/services/labsDataService'
 
 export const metadata: Metadata = {
     title: 'Laboratório',
@@ -18,7 +19,8 @@ interface ILista {
 }
 
 
-const Labs = () => {
+const Labs = async () => {
+    const data = await getLabListData()
     const lista: ILista[] = [
         {
             id: 0,
@@ -72,12 +74,12 @@ const Labs = () => {
 
     return (
         <PagesLayout title='Laboratório'>
-
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 xxl:px-20'>
-                {lista.map(
+                <Suspense fallback='Carregando...'>
+                {data.labList.map(
                     (item: ILista) => {
                         return (
-                            <Infobox key={item.id} className='bg-customFooterBackground'>
+                            <Infobox id={item.id} key={item.id} className='bg-customFooterBackground'>
                                 <Subtitle>Título {item.id}</Subtitle>
                                 <Text>{item.name}</Text>
                                 <Text>{item.name}</Text>
@@ -88,6 +90,7 @@ const Labs = () => {
                         )
                     }
                 )}
+                </Suspense>
             </div>
         </PagesLayout>
     )
