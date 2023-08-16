@@ -12,7 +12,10 @@ export const requestConfig = (
         body: data ? JSON.stringify(data) : null,
         headers: {
             "Content-Type": "application/json",
-            "accept": "application/json"
+            // "accept": "application/json",
+            "accept": "application/vnd.github+json",
+            "Cache-Control": "no-cache"
+
         },
         withCredentials: true,
     }

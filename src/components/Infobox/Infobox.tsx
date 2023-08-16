@@ -5,13 +5,13 @@ import { useRouter } from 'next/navigation'
 type Props = {
     children: any
     className?: string
-    id:number
+    slug: string
 }
-const Infobox = ({ children, className, id }: Props) => {
+const Infobox = ({ children, className, slug }: Props) => {
     const router = useRouter()
-    
+
     function handleOpenLab() {
-        router.push(`/labs/${id}`)
+        router.push(`/labs/${slug}`)
     }
     return (
         <div onClick={handleOpenLab}

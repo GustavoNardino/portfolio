@@ -4,6 +4,7 @@ export interface IHeadConfig {
     headers: {
         "Content-Type": string;
         "accept": string;
+        'Cache-Control': string;
     };
     withCredentials: boolean;
 }
