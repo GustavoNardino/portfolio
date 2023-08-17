@@ -1,5 +1,4 @@
-import { api, requestConfig } from "@/utils/config";
-import { headers } from "next/dist/client/components/headers";
+import { requestConfig } from "@/utils/config";
 
 export async function getLabListData() {
     // const config: any = requestConfig("GET");

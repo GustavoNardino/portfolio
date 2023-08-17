@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description: 'Portfólio e estudos de diversas ferramentas',
   verification:{
-    google: "google-site-verification=G-BR2VWDZZDW"
+    google: `google-site-verification=${process.env.NEXT_PUBLIC_GA}`
   },
   category: 'tecnologia',
 }
