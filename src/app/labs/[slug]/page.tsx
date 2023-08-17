@@ -1,4 +1,3 @@
-'use client'
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import Text from '@/components/Text/Text'
