@@ -4,7 +4,13 @@ export async function getLabListData() {
     // const config: any = requestConfig("GET");
     try {
         const res = await fetch(`https://api.github.com/users/GustavoNardino/repos`, {
-            cache: 'no-cache'
+            next:{
+                revalidate: 60
+            },
+            headers: {
+                "Content-Type": "application/json",
+                "accept": "application/vnd.github+json",
+            }
         })
             .then((res) => res.json())
             .catch((err) => err);
@@ -17,7 +23,15 @@ export async function getLabListData() {
 export async function getLabData(name: string) {
     const config: any = requestConfig("GET");
     try {
-        const res = await fetch(`https://api.github.com/repos/gustavonardino/${name}`, config)
+        const res = await fetch(`https://api.github.com/repos/gustavonardino/${name}`, {
+            next:{
+                revalidate: 60
+            },
+            headers: {
+                "Content-Type": "application/json",
+                "accept": "application/vnd.github+json",
+            }
+        })
             .then((res) => res.json())
             .catch((err) => err);
         return res;
@@ -29,7 +43,15 @@ export async function getLabData(name: string) {
 export async function getLabReadme(name: string) {
     const config: any = requestConfig("GET");
     try {
-        const res = await fetch(`https://raw.githubusercontent.com/GustavoNardino/${name}/main/README.md`, config)
+        const res = await fetch(`https://raw.githubusercontent.com/GustavoNardino/${name}/main/README.md`, {
+            next:{
+                revalidate: 60
+            },
+            headers: {
+                "Content-Type": "application/json",
+                "accept": "application/vnd.github+json",
+            }
+        })
             .then((res) => res.text())
             .catch((err) => err);
         return res;

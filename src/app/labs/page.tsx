@@ -1,5 +1,5 @@
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
-import React, { Suspense } from 'react'
+import React from 'react'
 import Text from '@/components/Text/Text'
 import { Metadata } from 'next'
 import Infobox from '@/components/Infobox/Infobox'
@@ -21,20 +21,18 @@ const Labs = async () => {
     return (
         <PagesLayout title='Laboratório'>
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 xxl:px-20'>
-                <Suspense fallback='Carregando...'>
-                    {data.map(
-                        (item: IRepoLab) => {
-                            return (
-                                <Infobox slug={item.name} key={item.id} className='bg-customFooterBackground'>
-                                    <Subtitle>{item.name}</Subtitle>
-                                    <Text>Linguagem: {item.language}</Text>
-                                    <Text>Atualizado em: {convertDateFormat(item.pushed_at)}</Text>
-                                    <Text className='mt-2 underline'>{item.description ? item.description : ''}</Text>
-                                </Infobox>
-                            )
-                        }
-                    )}
-                </Suspense>
+                {data.map(
+                    (item: IRepoLab) => {
+                        return (
+                            <Infobox slug={item.name} key={item.id} className='bg-customFooterBackground'>
+                                <Subtitle>{item.name}</Subtitle>
+                                <Text>Linguagem: {item.language}</Text>
+                                <Text>Atualizado em: {convertDateFormat(item.pushed_at)}</Text>
+                                <Text className='mt-2 underline'>{item.description ? item.description : ''}</Text>
+                            </Infobox>
+                        )
+                    }
+                )}
             </div>
         </PagesLayout>
     )
