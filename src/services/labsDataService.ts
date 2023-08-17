@@ -30,8 +30,8 @@ export async function getLabData(name: string) {
 export async function getLabReadme(name: string) {
     const config: any = requestConfig("GET");
     try {
-        const res = await fetch(`https://api.github.com/repos/gustavonardino/${name}/contents/README.md`, config)
-            .then((res) => res.json())
+        const res = await fetch(`https://raw.githubusercontent.com/GustavoNardino/${name}/main/README.md`, config)
+            .then((res) => res.text())
             .catch((err) => err);
         return res;
     } catch (error) {

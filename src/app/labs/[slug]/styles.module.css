@@ -1,0 +1,7 @@
+.teste div p a {
+    text-decoration: underline;
+}
+
+.teste div p a:hover {
+    opacity: 80%;
+}
