@@ -1,9 +1,9 @@
+import React from 'react'
+import Markdown from 'markdown-to-jsx';
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import Text from '@/components/Text/Text'
 import { getLabData, getLabReadme } from '@/services/labsDataService'
-import React from 'react'
-import Markdown from 'markdown-to-jsx';
 import styles from './styles.module.css'
 
 const Page = async ({ params }: { params: { slug: string } }) => {

@@ -1,9 +1,9 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import Text from '@/components/Text/Text'
 import InfoSection from '@/components/InfoSection/InfoSection'
-import { Metadata } from 'next'
 
 
 export const metadata: Metadata = {

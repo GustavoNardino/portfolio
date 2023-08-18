@@ -1,9 +1,7 @@
+import { Metadata } from 'next'
 import Subtitle from '@/components/Subtitle/Subtitle'
 import PagesLayout from '@/components/PagesLayout/PagesLayout'
 import Text from '@/components/Text/Text'
-import Infobox from '@/components/Infobox/Infobox'
-import { Metadata } from 'next'
-
 
 export const metadata: Metadata = {
     title: 'Experiências',
