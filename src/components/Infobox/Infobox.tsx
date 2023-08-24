@@ -18,7 +18,7 @@ const Infobox = ({ children, className, slug }: Props) => {
             className={`
             ${className}
             h-48
-            overflow-y-auto
+            overflow-y-hidden
             p-2 
             rounded-md 
             bg-customFooterBackground

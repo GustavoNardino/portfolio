@@ -3,5 +3,6 @@ export interface IRepoLab {
     name: string;
     language: string;
     pushed_at: string;
-    description: string | null;
+    description: string;
+    html_url: string;
 }

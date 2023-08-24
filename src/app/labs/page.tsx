@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 }
 
 const Labs = async () => {
-    const data = await getLabListData()
+    const data: IRepoLab[] = await getLabListData()
+    console.log(data)
     return (
         <PagesLayout title='Laboratório'>
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 xxl:px-20'>
@@ -28,7 +29,10 @@ const Labs = async () => {
                                 <Subtitle>{item.name}</Subtitle>
                                 <Text>Linguagem: {item.language}</Text>
                                 <Text>Atualizado em: {convertDateFormat(item.pushed_at)}</Text>
-                                <Text className='mt-2 underline'>{item.description ? item.description : ''}</Text>
+                                <Text
+                                    title={item.description}
+                                    className='mt-2 underline'>{item.description}
+                                </Text>
                             </Infobox>
                         )
                     }

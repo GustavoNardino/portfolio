@@ -2,12 +2,13 @@ import React from 'react'
 
 type TextProps = {
     children: any,
-    className?: string
+    className?: string,
+    title?:string
 }
 
-const Text = ({ children, className }: TextProps) => {
+const Text = ({ children, className, title }: TextProps) => {
     return (
-        <p className={`text-customText ${className}`}>
+        <p title={title} className={`text-customText ${className}`}>
             {children}
         </p>
     )

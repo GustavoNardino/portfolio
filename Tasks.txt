@@ -8,20 +8,6 @@ tailwind
 
 dark/light themes efeito de lâmpada acendendo com hover + shadow + transition + react icon
 
-=== DOING ===
-
-pegar logos das tecnologias utilizadas
-
-Selecionar conteúdo a ser exibido
-
-melhorar a paleta de cores
-
-melhorar diagramação da apresentação e experiências
-
-offcanvas
-
-=== TO DO ===
-
 SEO
     favicon
     open graph (modelo abaixo)
@@ -30,6 +16,21 @@ SEO
     description
     alternates:canonical:url
     
+pegar logos das tecnologias utilizadas
+
+=== DOING ===
+
+Selecionar conteúdo a ser exibido
+
+melhorar a paleta de cores
+
+melhorar diagramação da apresentação e experiências
+
+offcanvas (?)
+
+=== TO DO ===
+
+ajustar infobox scroll mobile e width do fieldset/markdown
 
 google analytics
 
@@ -40,48 +41,3 @@ adicionar descrições e links nas experiências
 grid e cards no labs
 
 fazer uma imagem para o open graph
-
-
-
-
-export const metadata = {
-  openGraph: {
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    url: 'https://nextjs.org',
-    siteName: 'Next.js',
-    images: [
-      {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: 'https://nextjs.org/og-alt.png',
-        width: 1800,
-        height: 1600,
-        alt: 'My custom alt',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-}
-
-
-
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-}
