@@ -1,0 +1,12 @@
+{
+  "/opengraph-image/route": "app/opengraph-image/route.js",
+  "/experiences/opengraph-image/route": "app/experiences/opengraph-image/route.js",
+  "/labs/opengraph-image/route": "app/labs/opengraph-image/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/page": "app/page.js",
+  "/labs/page": "app/labs/page.js",
+  "/experiences/page": "app/experiences/page.js",
+  "/labs/[slug]/page": "app/labs/[slug]/page.js"
+}

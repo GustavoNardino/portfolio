@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "functions": {
+    "/experiences/opengraph-image": {},
+    "/labs/opengraph-image": {},
+    "/opengraph-image": {},
+    "/experiences": {},
+    "/labs": {},
+    "/": {}
+  }
+}
